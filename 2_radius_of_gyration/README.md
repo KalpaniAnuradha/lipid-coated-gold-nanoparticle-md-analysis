@@ -51,14 +51,12 @@ molecules located within 4 Å of the AuNP surface. A smaller $R_g$
 indicates a more compact AuNP–lipid complex, whereas a larger $R_g$
 indicates a more spatially extended lipid coating.
 
-A smaller radius of gyration generally indicates a more compact
-lipid-coated nanoparticle structure. A larger radius of gyration
-indicates that the selected lipid coating extends farther from the
-centre of the nanoparticle.
+#Meaning for your study
 
-In this analysis, the radius of gyration represents the overall size
-and spatial extension of the AuNP–lipid complex, rather than the radius
-of gyration of the lipids alone.
+For your AuNP–DOPC system:
+A smaller $R_g$ means the selected AuNP–lipid complex is more compact.
+A larger $R_g$ means the selected lipid coating extends farther from the centre of the AuNP.
+Changes in $R_g$ over time indicate changes in the overall size or spatial extension of the lipid-coated nanoparticle.
 
 ## Files
 
