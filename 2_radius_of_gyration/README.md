@@ -41,6 +41,16 @@ where:
 - $\sum_i$ means that the calculation is performed for every selected
   atom and all contributions are added together.
 
+For each atom, its distance from the centre of mass is calculated,
+squared, and multiplied by its mass. These contributions are added
+together and divided by the total mass of the selected atoms. The
+square root of this value gives the radius of gyration.
+
+In this analysis, the selected atoms include the AuNP and the DOPC
+molecules located within 4 Å of the AuNP surface. A smaller $R_g$
+indicates a more compact AuNP–lipid complex, whereas a larger $R_g$
+indicates a more spatially extended lipid coating.
+
 A smaller radius of gyration generally indicates a more compact
 lipid-coated nanoparticle structure. A larger radius of gyration
 indicates that the selected lipid coating extends farther from the
