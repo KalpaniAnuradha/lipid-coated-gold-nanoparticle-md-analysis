@@ -51,12 +51,12 @@ molecules located within 4 Å of the AuNP surface. A smaller $R_g$
 indicates a more compact AuNP–lipid complex, whereas a larger $R_g$
 indicates a more spatially extended lipid coating.
 
-#Meaning for your study
+###Meaning for your study
 
 For your AuNP–DOPC system:
-A smaller $R_g$ means the selected AuNP–lipid complex is more compact.
-A larger $R_g$ means the selected lipid coating extends farther from the centre of the AuNP.
-Changes in $R_g$ over time indicate changes in the overall size or spatial extension of the lipid-coated nanoparticle.
+- A smaller $R_g$ means the selected AuNP–lipid complex is more compact.
+- A larger $R_g$ means the selected lipid coating extends farther from the centre of the AuNP.
+- Changes in $R_g$ over time indicate changes in the overall size or spatial extension of the lipid-coated nanoparticle.
 
 ## Files
 
