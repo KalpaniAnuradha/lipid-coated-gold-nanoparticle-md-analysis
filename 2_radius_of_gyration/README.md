@@ -14,7 +14,7 @@ reported in the associated publication.
 
 ## What is the radius of gyration?
 
-The radius of gyration, commonly written as \(R_g\), describes how the
+The radius of gyration, commonly written as $R_g$, describes how the
 mass of a group of atoms is distributed around its centre of mass.
 
 It is calculated as:
