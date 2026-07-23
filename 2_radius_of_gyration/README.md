@@ -34,9 +34,12 @@ $$
 
 where:
 
-- \(m_i\) is the mass of atom \(i\)
-- \(\mathbf{r}_i\) is the position of atom \(i\)
-- \(\mathbf{r}_{\mathrm{COM}}\) is the centre-of-mass position of the selected atoms
+- $m_i$ is the mass of atom $i$.
+- $\mathbf{r}_i$ is the three-dimensional position of atom $i$.
+- $\mathbf{r}_{\mathrm{COM}}$ is the centre-of-mass position of all
+  selected atoms.
+- $\sum_i$ means that the calculation is performed for every selected
+  atom and all contributions are added together.
 
 A smaller radius of gyration generally indicates a more compact
 lipid-coated nanoparticle structure. A larger radius of gyration
