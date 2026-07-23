@@ -19,7 +19,9 @@ mass of a group of atoms is distributed around its centre of mass.
 
 It is calculated as:
 
-\[
+The radius of gyration is calculated as:
+
+$$
 R_g =
 \sqrt{
 \frac{
@@ -28,7 +30,7 @@ R_g =
 \sum_i m_i
 }
 }
-\]
+$$
 
 where:
 
