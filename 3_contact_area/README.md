@@ -23,8 +23,6 @@ When lipids bind to the AuNP, part of the solvent-accessible surface of
 both components becomes buried. The buried surface area can therefore be
 used to estimate the lipid–AuNP contact area.
 
-In this analysis, the contact area is calculated as:
-
 The contact area is calculated as:
 
 $$
