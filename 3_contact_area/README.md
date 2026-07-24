@@ -159,12 +159,6 @@ In VMD, select:
 
 **Extensions → Tk Console**
 
-Change to the directory containing the files, for example:
-
-```tcl
-cd "path/to/03_lipid_AuNP_contact_area"
-```
-
 Run the script using:
 
 ```tcl
