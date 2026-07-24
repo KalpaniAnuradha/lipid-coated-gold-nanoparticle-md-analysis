@@ -25,7 +25,7 @@ used to estimate the lipid–AuNP contact area.
 
 The contact area is calculated as:
 
-$$
+```math
 A_{\mathrm{contact}} =
 \frac{
 \mathrm{SASA}_{\mathrm{AuNP}}
@@ -34,16 +34,13 @@ A_{\mathrm{contact}} =
 -
 \mathrm{SASA}_{\mathrm{AuNP+lipids}}
 }{2}
-$$
+```
 
 where:
 
-- \(\mathrm{SASA}_{\mathrm{AuNP}}\) is the solvent-accessible surface
-  area of the gold nanoparticle alone.
-- \(\mathrm{SASA}_{\mathrm{lipids}}\) is the solvent-accessible surface
-  area of the selected DOPC molecules alone.
-- \(\mathrm{SASA}_{\mathrm{AuNP+lipids}}\) is the solvent-accessible
-  surface area of the combined AuNP–DOPC complex.
+- **SASA of the AuNP** is the solvent-accessible surface area of the gold nanoparticle alone.
+- **SASA of the lipids** is the solvent-accessible surface area of the selected DOPC molecules alone.
+- **SASA of the AuNP–lipid complex** is the solvent-accessible surface area of the combined AuNP and DOPC selection.
 
 The result is divided by two because the buried interface is counted
 once on the AuNP surface and once on the lipid surface.
