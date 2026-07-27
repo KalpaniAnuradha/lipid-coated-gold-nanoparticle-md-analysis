@@ -221,10 +221,6 @@ required.
 The trajectory file is not included because of GitHub file-size
 limitations.
 
-Researchers who require the trajectory files should contact
-the corresponding authors of the publication associated with this
-repository. Their contact details are provided in the publication.
-
 ## Analysis parameters
 
 The main analysis parameters are:
