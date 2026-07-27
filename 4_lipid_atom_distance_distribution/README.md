@@ -295,12 +295,6 @@ In VMD, select:
 
 **Extensions → Tk Console**
 
-Change to the folder containing the files. For example:
-
-```tcl
-cd "path/to/4_lipid_atom_distance_distribution"
-```
-
 Run the analysis script using:
 
 ```tcl
