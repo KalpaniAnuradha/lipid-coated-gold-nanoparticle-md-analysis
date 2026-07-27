@@ -18,9 +18,6 @@ different atomic selections:
 - Selected lipid headgroup atoms
 - Terminal carbon atoms of the lipid tails
 
-For the headgroup analysis, the nitrogen atom was used for DOPC, DSPC,
-POPC, DPPC, DOPE, and DOTAP. The phosphorus atom was used for DOPA.
-
 The same general workflow can be adapted for the other lipid systems
 and atomic selections by changing the VMD atom selection.
 
@@ -166,7 +163,7 @@ The command means:
 
 ## Files
 
-- `AuNP_DOPC_min_01.pdb` – Representative structure of the DOPC-coated
+- `AuNP_DOPC.pdb` – Representative structure of the DOPC-coated
   AuNP
 - `rmsf_DOPC_N.tcl` – VMD Tcl script used to calculate the RMSF of DOPC
   headgroup nitrogen atoms
@@ -283,27 +280,21 @@ Load the corresponding trajectory into the same VMD molecule:
 The PDB structure and trajectory must be loaded into the same molecule,
 not as separate molecules.
 
-### Step 3: Check the trajectory
+### Step 3: Allign all the frames
 
 Before running the RMSF calculation:
 
-1. Confirm that the trajectory contains the intended final 10 ns.
-2. Confirm that the trajectory contains the required frame range.
-3. Confirm that the system has been wrapped correctly.
-4. Confirm that the trajectory has been aligned to the AuNP.
-5. Confirm that the selected DOPC nitrogen atoms are present.
+1. Align all the frames in the trajectory using the RMSD trajectory tool.
+2. Select **Extensions**.
+3. Select **RMSD Trajectory Tool**.
+4. In the selection box type "resname AUM".
+5. Click **ALIGN**. 
 
 ### Step 4: Open the Tk Console
 
 In VMD, select:
 
 **Extensions → Tk Console**
-
-Change to the folder containing the files. For example:
-
-```tcl
-cd "path/to/6_rmsf"
-```
 
 Run the analysis script using:
 
@@ -334,69 +325,6 @@ A simplified example is:
 ```
 
 Each value corresponds to one selected DOPC nitrogen atom.
-
-The values are written in the same order as the atoms returned by the
-VMD selection:
-
-```tcl
-resname DOPC and name N
-```
-
-The output file does not contain:
-
-- Atom indices
-- Residue numbers
-- Segment names
-- Column headings
-- Simulation times
-
-RMSF is calculated over a range of frames, so each output value
-represents the fluctuation of one atom over the complete analysed
-period, rather than a value for one individual trajectory frame.
-
-## Optional output header
-
-The script currently opens the output file using:
-
-```tcl
-set output [open "RMSF_DOPC_N.dat" w]
-```
-
-A heading can be added by changing this section to:
-
-```tcl
-set output [open "RMSF_DOPC_N.dat" w]
-puts $output "# RMSF_A"
-```
-
-This will add the following heading:
-
-```text
-# RMSF_A
-```
-
-## Optional atom identification in the output
-
-To make the output easier to interpret, the atom index, residue number,
-segment name, and RMSF value can be written together.
-
-For example:
-
-```tcl
-set atomIndices [$selection1 get index]
-set residueIDs  [$selection1 get resid]
-set segmentNames [$selection1 get segname]
-
-puts $output "# Atom_index Resid Segname RMSF_A"
-
-foreach atomIndex $atomIndices resid $residueIDs segname $segmentNames value $rmsf {
-    puts $output "$atomIndex\t$resid\t$segname\t$value"
-}
-```
-
-This optional modification is not part of the currently uploaded
-analysis script, but it can help identify which RMSF value belongs to
-each lipid molecule.
 
 ## Important note about the initial frame
 
@@ -449,26 +377,6 @@ To keep VMD open after the analysis, remove or comment out this line:
 ```tcl
 #exit 0
 ```
-
-## Post-processing and figure preparation
-
-The uploaded Tcl script calculates individual RMSF values for the
-selected DOPC nitrogen atoms.
-
-It does not directly calculate:
-
-- The mean RMSF
-- The standard error
-- Values combined across simulation replicates
-- The final bar graph
-
-Additional post-processing is required to calculate the summary values
-used for comparison between the lipid systems.
-
-In the associated publication, the RMSF analysis included all heavy
-atoms, selected headgroup atoms, and terminal carbon atoms. The plotted
-bars represent mean fluctuations, and the error bars represent standard
-errors. :contentReference[oaicite:0]{index=0}
 
 ## Trajectory availability
 
@@ -527,26 +435,6 @@ Update the output filename, for example:
 
 ```tcl
 set output [open "RMSF_DOPC_terminal_C.dat" w]
-```
-
-## Adapting the script for DOPA headgroup atoms
-
-The associated publication used the phosphorus atom for the DOPA
-headgroup RMSF analysis.
-
-A possible DOPA selection is:
-
-```tcl
-set selection1 [atomselect top "resname DOPA and name P"]
-```
-
-Before using this selection, check the DOPA structure or topology to
-confirm that the phosphorus atom is named `P`.
-
-The output filename should also be updated:
-
-```tcl
-set output [open "RMSF_DOPA_P.dat" w]
 ```
 
 ## Adapting the script for another lipid system
