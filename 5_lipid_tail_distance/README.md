@@ -264,12 +264,6 @@ In VMD, select:
 
 **Extensions → Tk Console**
 
-Change to the folder containing the files. For example:
-
-```tcl
-cd "path/to/5_lipid_tail_distance"
-```
-
 Run the analysis script using:
 
 ```tcl
@@ -442,21 +436,6 @@ To analyse another lipid system:
 8. Confirm that the contact cutoff is appropriate.
 9. Confirm that each lipid is correctly reconstructed across periodic
    boundaries.
-
-For example, replace:
-
-```tcl
-name C218
-```
-
-and:
-
-```tcl
-name C318
-```
-
-with the terminal-carbon atom names used in the topology of the lipid
-being analysed.
 
 Different lipid types can use different atom names for their two acyl
 tails. Check the corresponding topology or PDB file before modifying
