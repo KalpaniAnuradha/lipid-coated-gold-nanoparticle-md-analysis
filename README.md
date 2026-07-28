@@ -24,24 +24,7 @@ the molecular organisation of the lipid coating at the nanoparticle
 surface.
 
 Atomistic molecular dynamics simulations were used to investigate the
-interaction of a faceted 5 nm gold nanoparticle with seven lipid types:
-
-- DOPC
-- DSPC
-- POPC
-- DPPC
-- DOPE
-- DOPA
-- DOTAP
-
-These lipids represent differences in:
-
-- Headgroup identity
-- Headgroup charge
-- Charge distribution
-- Acyl-chain length
-- Tail saturation
-- Lipid phase behaviour
+interaction of a faceted 5 nm gold nanoparticle with lipids.
 
 The analysis workflows in this repository were used to characterise the
 number, organisation, spatial distribution, packing, and mobility of
@@ -55,9 +38,7 @@ This repository provides a **representative DOPC example** for each
 analysis workflow.
 
 The same general analysis procedures were applied to the other lipid
-systems reported in the associated publication. Files for all seven
-lipid systems are not included because they would substantially
-duplicate the example workflows and increase the size of the repository.
+systems reported in the associated publication.
 
 Each analysis folder contains some or all of the following:
 
@@ -159,9 +140,6 @@ simulations containing:
 - 0.15 M NaCl
 - Neutralising counterions where required
 
-The seven systems contained DOPC, DSPC, POPC, DPPC, DOPE, DOPA, or
-DOTAP.
-
 The simulations were performed using:
 
 - **GROMACS 2023**
@@ -169,7 +147,7 @@ The simulations were performed using:
 - A modified **INTERFACE force field** for Au atoms
 - **CHARMM TIP3P water**
 - **CHARMM-GUI** for system component preparation
-- **PACKMOL** for initial lipid placement
+- **PACKMOL** for initial lipid packing
 
 The primary trajectory analyses were performed using VMD and Tcl
 scripts.
@@ -190,10 +168,6 @@ VMD or use a specified frame range. Users should confirm that:
 - The structure and trajectory contain matching atoms
 - The required residue and atom names are correct
 
-In the associated simulations, atomic coordinates were saved every
-10 ps. Scripts containing a `ps_per_frame` value should be updated when
-a trajectory uses a different frame interval.
-
 ---
 
 ## Software requirements
@@ -202,7 +176,7 @@ The following software may be required, depending on the analysis:
 
 | Software | Purpose |
 |---|---|
-| VMD | Loading structures and trajectories and running the Tcl analysis scripts |
+| VMD (version 1.9.4a53)| Loading structures and trajectories and running the Tcl analysis scripts |
 | Tcl | Scripting language used by VMD |
 | PBCTools | Joining, centring, and wrapping trajectories and supporting periodic-boundary treatment |
 | GROMACS | Simulation generation and optional trajectory preparation |
@@ -252,12 +226,6 @@ Open:
 
 **Extensions → Tk Console**
 
-Change to the relevant analysis folder:
-
-```tcl
-cd "path/to/analysis_folder"
-```
-
 Run the script:
 
 ```tcl
@@ -273,28 +241,6 @@ trajectory preparation.
 
 ---
 
-## Important trajectory preparation
-
-Before running an analysis, inspect the trajectory visually in VMD.
-
-Depending on the analysis, the trajectory may need to be:
-
-- Reconstructed across periodic boundaries
-- Centred using the AuNP
-- Wrapped while keeping lipid residues whole
-- Aligned to the AuNP
-- Reduced to the intended final 10 ns
-- Stripped of unnecessary solvent or ion atoms
-
-Incorrect periodic-boundary treatment may split lipid molecules or the
-AuNP across the simulation box and produce incorrect distance, radius
-of gyration, contact-area, or RMSF values.
-
-The requirements for each analysis are explained in its folder-specific
-README.
-
----
-
 ## Representative files and trajectory availability
 
 The trajectory files are not included in this GitHub repository because
@@ -304,10 +250,11 @@ The uploaded PDB structures, Tcl scripts, and output files provide
 representative examples of the analysis workflows.
 
 Researchers who require the trajectory files should contact the
-corresponding authors of the associated publication:
+following authors of the associated publication:
 
-- **Aaron Elbourne** — aaron.elbourne@rmit.edu.au
 - **Andrew J. Christofferson** — andrew.christofferson@rmit.edu.au
+- **Kalpani A. Mirihana** — kalpani.anuradha@outlook.com
+
 
 Availability of trajectory files may be subject to storage,
 institutional, authorship, and publication requirements.
@@ -412,9 +359,8 @@ For questions about the analysis scripts or repository, please open a
 GitHub Issue.
 
 For questions concerning the associated publication or access to the
-simulation trajectories, contact the corresponding authors:
+simulation trajectories, contact the corresponding author:
 
-- Aaron Elbourne — aaron.elbourne@rmit.edu.au
 - Andrew J. Christofferson — andrew.christofferson@rmit.edu.au
 
 ---
