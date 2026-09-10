@@ -313,4 +313,4 @@ than counting individual lipid atoms.
 K. A. Mirihana et al., *Structural and dynamic properties of
 lipid-coated gold nanoparticles*.
 
-Publication DOI: To be added after publication.
+Publication DOI: **https://doi.org/10.1002/admi.70666**
