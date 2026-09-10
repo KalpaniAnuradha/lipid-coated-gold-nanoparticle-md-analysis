@@ -6,7 +6,7 @@ lipid-coated 5 nm gold nanoparticles.
 
 This repository accompanies the research article:
 
-> **Structural and dynamic properties of lipid-coated gold nanoparticles**
+> **Structural and Dynamic Properties of Lipid-Coated Gold Nanoparticles**
 
 The study examines how lipid headgroup chemistry, charge, acyl-chain
 length, and tail saturation influence the structure, packing, spatial
