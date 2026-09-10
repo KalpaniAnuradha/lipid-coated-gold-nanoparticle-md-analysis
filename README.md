@@ -313,14 +313,12 @@ Elbourne, and Andrew J. Christofferson**
 
 *Structural and dynamic properties of lipid-coated gold nanoparticles.*
 
-Journal: **To be added**
+Journal: **Advanced Materials Interfaces**
 
-Year: **To be added**
+Year: **2026**
 
-DOI: **To be added after publication**
+DOI: **https://doi.org/10.1002/admi.70666**
 
-The publication citation and repository DOI will be updated when they
-become available.
 
 ---
 
@@ -332,7 +330,7 @@ please cite both:
 1. The associated journal article.
 2. The archived release of this repository.
 
-A recommended citation for the article will be added after publication.
+How to cite: **K. A. Mirihana, R. Kariuki, C. E. Conn, A. Elbourne, and A. J. Christofferson, “ Structural and Dynamic Properties of Lipid-Coated Gold Nanoparticles.” Advanced Materials Interfaces (2026): e70666. https://doi.org/10.1002/admi.70666**
 
 A permanent repository citation and DOI will be added after a versioned
 release has been archived.
