@@ -364,8 +364,6 @@ simulation trajectories, contact the following authors:
 
 ---
 
-## Licence
-
 ## License
 
 The content in this repository is licensed under the
