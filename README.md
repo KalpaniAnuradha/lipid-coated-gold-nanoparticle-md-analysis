@@ -357,21 +357,27 @@ For questions about the analysis scripts or repository, please open a
 GitHub Issue.
 
 For questions concerning the associated publication or access to the
-simulation trajectories, contact the corresponding author:
+simulation trajectories, contact the following authors:
 
 - Andrew J. Christofferson — andrew.christofferson@rmit.edu.au
+- Kalpani A. Mirihana - kalpani.anuradha@outlook.com
 
 ---
 
 ## Licence
 
-This repository is released under the **[LICENCE NAME]** licence.
+## License
 
-See the [`LICENSE`](./LICENSE) file for the permitted use,
-redistribution, and modification of the repository contents.
+The content in this repository is licensed under the
+**Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
 
-> Replace `[LICENCE NAME]` after confirming the appropriate licence with
-> the authors, supervisors, and RMIT University.
+You are free to share and adapt the material, provided that you give
+appropriate credit, provide a link to the license, and indicate if
+changes were made.
+
+If you use the scripts, data, figures, or analysis methods provided in
+this repository for academic research. Please also cite the associated
+publication and the archived version of this repository.
 
 ---
 
