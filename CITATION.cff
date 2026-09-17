@@ -1,5 +1,37 @@
-preferred-citation:
+cff-version: 1.2.0
+message: "If you use the scripts, data, or analysis workflows in this repository, please cite the associated publication and this repository."
 
+title: "Lipid-Coated Gold Nanoparticle MD Analysis"
+type: software
+
+authors:
+  - family-names: "Mirihana"
+    given-names: "Kalpani A."
+  - family-names: "Kariuki"
+    given-names: "Rashad"
+  - family-names: "Conn"
+    given-names: "Charlotte E."
+  - family-names: "Elbourne"
+    given-names: "Aaron"
+  - family-names: "Christofferson"
+    given-names: "Andrew J."
+
+repository-code: "https://github.com/KalpaniAnuradha/lipid-coated-gold-nanoparticle-md-analysis"
+
+license: "CC-BY-4.0"
+
+keywords:
+  - molecular dynamics
+  - gold nanoparticles
+  - lipid-coated nanoparticles
+  - lipid corona
+  - computational chemistry
+  - GROMACS
+  - VMD
+  - Tcl
+  - nano-bio interface
+
+preferred-citation:
   type: article
   authors:
     - family-names: "Mirihana"
@@ -12,7 +44,7 @@ preferred-citation:
       given-names: "Aaron"
     - family-names: "Christofferson"
       given-names: "Andrew J."
-  title: "Structural and Dynamic Properties of Lipid-Coated Gold Nanoparticles"
+  title: "Structural and dynamic properties of lipid-coated gold nanoparticles"
   journal: "Advanced Materials Interfaces"
   year: 2026
-  doi: "https://doi.org/10.1002/admi.70666"
+  doi: "10.1002/admi.70666"
