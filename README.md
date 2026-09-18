@@ -324,16 +324,24 @@ DOI: **https://doi.org/10.1002/admi.70666**
 
 ## Citation
 
-When using the scripts, methods, or data provided in this repository,
+If you use the scripts, methods, or data provided in this repository,
 please cite both:
 
-1. The associated journal article.
-2. The archived release of this repository.
+1. **Associated journal article**
 
-How to cite: **K. A. Mirihana, R. Kariuki, C. E. Conn, A. Elbourne, and A. J. Christofferson, “ Structural and Dynamic Properties of Lipid-Coated Gold Nanoparticles.” Advanced Materials Interfaces (2026): e70666. https://doi.org/10.1002/admi.70666**
+   K. A. Mirihana, R. Kariuki, C. E. Conn, A. Elbourne, and
+   A. J. Christofferson, *Structural and dynamic properties of
+   lipid-coated gold nanoparticles*, Advanced Materials Interfaces
+   (2026), e70666.
 
-A permanent repository citation and DOI will be added after a versioned
-release has been archived.
+   https://doi.org/10.1002/admi.70666
+
+2. **Archived repository**
+
+   K. A. Mirihana et al., *Lipid-Coated Gold Nanoparticle MD Analysis*,
+   Version 1.0.0, Zenodo (2026).
+
+   https://doi.org/10.5281/zenodo.22829769
 
 ---
 
