@@ -1,6 +1,6 @@
 # Lipid-Coated Gold Nanoparticle MD Analysis
 
-[![DOI](https://zenodo.org/badge/1308373366.svg)](https://doi.org/10.5281/zenodo.22829768)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22829768.svg)](https://doi.org/10.5281/zenodo.22829768)
 
 Representative VMD/Tcl analysis workflows, input structures, and example
 outputs associated with atomistic molecular dynamics simulations of
