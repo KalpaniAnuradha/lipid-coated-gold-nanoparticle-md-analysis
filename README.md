@@ -1,5 +1,9 @@
 # Lipid-Coated Gold Nanoparticle MD Analysis
 
+# Lipid-Coated Gold Nanoparticle MD Analysis
+
+[![DOI](https://zenodo.org/badge/1308373366.svg)](https://doi.org/10.5281/zenodo.22829768)
+
 Representative VMD/Tcl analysis workflows, input structures, and example
 outputs associated with atomistic molecular dynamics simulations of
 lipid-coated 5 nm gold nanoparticles.
@@ -24,7 +28,8 @@ the molecular organisation of the lipid coating at the nanoparticle
 surface.
 
 Atomistic molecular dynamics simulations were used to investigate the
-interaction of a faceted 5 nm gold nanoparticle with lipids.
+interaction of a faceted 5 nm gold nanoparticle with seven lipid types:
+DOPC, DSPC, POPC, DPPC, DOPE, DOPA, and DOTAP.
 
 The analysis workflows in this repository were used to characterise the
 number, organisation, spatial distribution, packing, and mobility of
@@ -338,10 +343,13 @@ please cite both:
 
 2. **Archived repository**
 
-   K. A. Mirihana et al., *Lipid-Coated Gold Nanoparticle MD Analysis*,
-   Version 1.0.0, Zenodo (2026).
+K. A. Mirihana et al., *Lipid-Coated Gold Nanoparticle MD Analysis*,
+Version 1.0.0, Zenodo (2026).
 
-   https://doi.org/10.5281/zenodo.22829769
+https://doi.org/10.5281/zenodo.22829768
+
+**Latest repository version:**  
+https://doi.org/10.5281/zenodo.22829769
 
 ---
 
@@ -382,8 +390,10 @@ appropriate credit, provide a link to the license, and indicate if
 changes were made.
 
 If you use the scripts, data, figures, or analysis methods provided in
-this repository for academic research. Please also cite the associated
+this repository for academic research, please also cite the associated
 publication and the archived version of this repository.
+
+See the [`LICENSE`](./LICENSE) file for the full licence terms.
 
 ---
 
